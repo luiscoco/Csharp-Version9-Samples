@@ -244,7 +244,7 @@ Each project P141 - P157 illustrates one feature with runnable code.
 
 ---
 
-## 🔧 Requirements
+## Requirements
 
 - .NET 5 SDK  
 - C# 9 language version  
@@ -258,7 +258,7 @@ dotnet run --project P137_Records
 
 ---
 
-## 📖 References
+## References
 
 - What’s new in C# 9 – Microsoft Learn  
 - “Welcome to C# 9” – .NET Blog  
