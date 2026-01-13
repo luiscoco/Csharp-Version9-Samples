@@ -1,15 +1,15 @@
 # C# 9 Features – Sample Projects
 
 This repository contains hands-on examples of the new features introduced in **C# version 9** (shipped with .NET 5).  
-Each project (`P137`, `P138`, …) illustrates one feature with runnable code.
+Each project P141 - P1357 illustrates one feature with runnable code.
 
 ---
 
-## 🚀 New Features in C# 9
+## New Features in C# 9
 
 ### Records & Object Initialization
 
-#### 1) Records (`P137_Records`)
+#### P141_Records
 - **What’s new**: `record` types give you value-based equality, built-in `Deconstruct`, and `with` expressions.  
 - **Example**:
   ```csharp
@@ -21,7 +21,7 @@ Each project (`P137`, `P138`, …) illustrates one feature with runnable code.
   Console.WriteLine(p1 == p2); // False
   ```
 
-#### 2) Init-only Setters (`P138_InitOnlySetters`)
+#### P142_InitOnlySetters
 - **What’s new**: Properties marked `init` can only be set during initialization.  
 - **Example**:
   ```csharp
@@ -34,7 +34,7 @@ Each project (`P137`, `P138`, …) illustrates one feature with runnable code.
   // c.Name = "Other"; // ❌ not allowed
   ```
 
-#### 3) Target-typed `new` (`P146_TargetTypedNew`)
+#### P143_TargetTypedNew
 - **What’s new**: The `new()` expression can infer its type from the context.  
 - **Example**:
   ```csharp
@@ -46,7 +46,7 @@ Each project (`P137`, `P138`, …) illustrates one feature with runnable code.
 
 ### Top-level & Partial Methods
 
-#### 4) Top-level Statements (`P139_TopLevelStatements`)
+#### P144_TopLevelStatements
 - **What’s new**: Eliminate the `Program`/`Main` boilerplate for simple apps.  
 - **Example**:
   ```csharp
