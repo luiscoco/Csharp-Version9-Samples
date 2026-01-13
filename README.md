@@ -1,4 +1,4 @@
-# C# 9 Features – Sample Projects
+# C# 9 Features - Sample Projects
 
 This repository contains hands-on examples of the new features introduced in **C# version 9** (shipped with .NET 5).  
 Each project P141 - P157 illustrates one feature with runnable code.
