@@ -34,7 +34,7 @@ Each project P141 - P1357 illustrates one feature with runnable code.
   // c.Name = "Other"; // ❌ not allowed
   ```
 
-#### P143_TargetTypedNew
+#### P150_TargetTypedNew
 - **What’s new**: The `new()` expression can infer its type from the context.  
 - **Example**:
   ```csharp
@@ -46,14 +46,14 @@ Each project P141 - P1357 illustrates one feature with runnable code.
 
 ### Top-level & Partial Methods
 
-#### P144_TopLevelStatements
+#### P143_TopLevelStatements
 - **What’s new**: Eliminate the `Program`/`Main` boilerplate for simple apps.  
 - **Example**:
   ```csharp
   Console.WriteLine("Hello, world!");
   ```
 
-#### 5) Extended Partial Methods (`P145_PartialMethodsNew`)
+#### P149_PartialMethodsNew
 - **What’s new**: Partial methods can now be public, return values, and have attributes.  
 - **Example**:
   ```csharp
@@ -72,7 +72,7 @@ Each project P141 - P1357 illustrates one feature with runnable code.
 
 ### Pattern Matching Enhancements
 
-#### 6) Relational & Logical Patterns (`P140_Patterns_Relational_Logical`)
+#### P144_Patterns_Relational_Logical
 - **What’s new**: Support for relational operators (`<`, `>`, …) and logical operators (`and`, `or`, `not`) in patterns.  
 - **Example**:
   ```csharp
@@ -85,7 +85,7 @@ Each project P141 - P1357 illustrates one feature with runnable code.
   };
   ```
 
-#### 7) More Pattern Examples (`P153_Patterns_More`)
+#### P157_Patterns_More
 - **What’s new**: Additional use cases like grouped patterns and ordering rules.  
 - **Example**:
   ```csharp
@@ -102,7 +102,7 @@ Each project P141 - P1357 illustrates one feature with runnable code.
 
 ### Performance & Interop
 
-#### 8) Native-sized Integers (`P141_NativeSizedIntegers`)
+#### P145_NativeSizedIntegers
 - **What’s new**: `nint` and `nuint` scale with platform pointer size.  
 - **Example**:
   ```csharp
@@ -110,7 +110,7 @@ Each project P141 - P1357 illustrates one feature with runnable code.
   nuint length = (nuint)"hello".Length;
   ```
 
-#### 9) Function Pointers (unsafe) (`P142_FunctionPointers`)
+#### P146_FunctionPointers
 - **What’s new**: Support for unmanaged function pointers via `delegate*`.  
 - **Example**:
   ```csharp
@@ -122,7 +122,7 @@ Each project P141 - P1357 illustrates one feature with runnable code.
   static int Add(int a, int b) => a + b;
   ```
 
-#### 10) Skip Locals Init (unsafe) (`P143_SuppressLocalsInit`)
+#### P147_SuppressLocalsInit
 - **What’s new**: `[SkipLocalsInit]` disables default zero-initialization of locals for performance-critical methods.  
 - **Example**:
   ```csharp
@@ -135,7 +135,7 @@ Each project P141 - P1357 illustrates one feature with runnable code.
   }
   ```
 
-#### 11) Module Initializers (`P144_ModuleInitializers`)
+#### P148_ModuleInitializers
 - **What’s new**: Run code once at assembly load.  
 - **Example**:
   ```csharp
@@ -152,21 +152,21 @@ Each project P141 - P1357 illustrates one feature with runnable code.
 
 ### Lambdas & Local Functions
 
-#### 12) Static Anonymous Functions (`P147_StaticAnonymousFunctions`)
+#### P151_StaticAnonymousFunctions
 - **What’s new**: `static` lambdas can’t capture state → allocation-free delegates.  
 - **Example**:
   ```csharp
   Func<int,int,int> add = static (a, b) => a + b;
   ```
 
-#### 13) Lambda Discard Parameters (`P151_LambdaDiscardParams`)
+#### P155_LambdaDiscardParams
 - **What’s new**: Use `_` to discard unused lambda parameters.  
 - **Example**:
   ```csharp
   Action<int,int> ignore = (_, _) => Console.WriteLine("ignored");
   ```
 
-#### 14) Attributes on Local Functions (`P152_AttributesOnLocalFunctions`)
+#### P156_AttributesOnLocalFunctions
 - **What’s new**: Local functions can now have attributes.  
 - **Example**:
   ```csharp
@@ -182,7 +182,7 @@ Each project P141 - P1357 illustrates one feature with runnable code.
 
 ### Fit-and-Finish
 
-#### 15) Target-typed Conditionals (`P148_TargetTypedConditional`)
+#### P152_TargetTypedConditional
 - **What’s new**: Conditional expressions can target the expected type more flexibly.  
 - **Example**:
   ```csharp
@@ -190,7 +190,7 @@ Each project P141 - P1357 illustrates one feature with runnable code.
   IEnumerable<int> seq = flag ? new[] {1,2,3} : new List<int> {1,2,3};
   ```
 
-#### 16) Covariant Return Types (`P149_CovariantReturnTypes`)
+#### P153_CovariantReturnTypes
 - **What’s new**: Overrides can return a more derived type.  
 - **Example**:
   ```csharp
@@ -201,7 +201,7 @@ Each project P141 - P1357 illustrates one feature with runnable code.
   }
   ```
 
-#### 17) Extension GetEnumerator (`P150_ExtensionGetEnumerator`)
+#### P154_ExtensionGetEnumerator
 - **What’s new**: `foreach` works with an extension `GetEnumerator` method.  
 - **Example**:
   ```csharp
